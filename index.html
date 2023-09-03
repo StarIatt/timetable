@@ -1115,104 +1115,8 @@
       <form action="https://kai.ru/raspisanie#" id="hrefFm" method="post" name="hrefFm"></form>
     </div>
   </div>
-  <div>
-    <link href="./index_files/main(2).css" rel="stylesheet" type="text/css">
-    <div class="portlet-boundary portlet-boundary_groupsAssigner_WAR_groupsAssigner10_ portlet-static portlet-static-end" id="p_p_id_groupsAssigner_WAR_groupsAssigner10_">
-      <span id="p_groupsAssigner_WAR_groupsAssigner10"></span>
-      <section class="portlet kai-article" id="portlet_groupsAssigner_WAR_groupsAssigner10">
-        <header class="portlet-topper">
-          <h1 class="portlet-title"><span class="" onmouseover="Liferay.Portal.ToolTip.show(this, 'Автоматическое\x20назначение\x20групп\x20пользователям')"><img id="bvrs_null_null" src="./index_files/icon(1).png" alt="icon(1)"> <span class="taglib-text hide-accessible">Автоматическое назначение групп пользователям</span></span> <span class="portlet-title-text">Автоматическое назначение групп пользователям</span></h1>
-          <menu class="portlet-topper-toolbar" id="portlet-topper-toolbar_groupsAssigner_WAR_groupsAssigner10" type="toolbar"></menu>
-        </header>
-        <div class="portlet-content">
-          <div class="portlet-content-container" style="">
-            <div class="portlet-body">
-              <script>
-
-
-              AUI().use('cookie', 'aui-io-request', function (A) {
-              console.log('getting roles update');
-              var upd = A.Cookie.get("updRoles");
-              console.log('update = ' + upd);
-
-              if (upd == null) {
-                A.io.request('https://kai.ru/raspisanie?p_p_id=groupsAssigner_WAR_groupsAssigner10&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=updateRoles&p_p_cacheability=cacheLevelPage',
-                        {
-                            method: 'POST',
-                            dataType: 'json',
-                            data: {},
-                            on: {
-                                success: function () {
-                                    var minutes = 1;
-                                    var date = new Date((new Date()).getTime() + minutes * 60000);
-                                    var options = {
-                                        expires: date
-                                    };
-                                    console.log('setting roles update');
-                                    var upd = A.Cookie.set("updRoles", "i", options);
-                                    console.log('update = ' + upd);
-                                }
-                            }
-                        }
-                )
-              }
-              })
-              </script>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <script src="./index_files/main.js(1).%D0%91%D0%B5%D0%B7%20%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F" type="text/javascript"></script>
-  </div>
   <div id="blur" style="display: none"></div>
   <link href="./index_files/main(3).css" rel="stylesheet" type="text/css">
-  <div class="portlet-boundary portlet-boundary_58_ portlet-static portlet-static-end portlet-login" id="p_p_id_58_">
-    <span id="p_58"></span>
-    <section class="portlet kai-article" id="portlet_58">
-      <header class="portlet-topper">
-        <h1 class="portlet-title"><span class="" onmouseover="Liferay.Portal.ToolTip.show(this, 'Вход\x20в\x20систему')"><img id="etlj_null_null" src="./index_files/spacer.png" alt="spacer" style="background-image: url('https://kai.ru/sprite/html/icons/_sprite.png'); background-position: 50% -592px; background-repeat: no-repeat; height: 16px; width: 16px;"> <span class="taglib-text hide-accessible">Вход в систему</span></span> <span class="portlet-title-text">Вход в систему</span></h1>
-        <menu class="portlet-topper-toolbar" id="portlet-topper-toolbar_58" type="toolbar"></menu>
-      </header>
-      <div class="portlet-content" id="yui_patched_v3_11_0_1_1693770250341_952">
-        <div class="portlet-content-container" style="" id="yui_patched_v3_11_0_1_1693770250341_951">
-          <div class="portlet-body" id="yui_patched_v3_11_0_1_1693770250341_950">
-            <div class="popup_wrapper" id="popup_wrapper">
-              <div class="over"></div>
-              <div class="popup_box login_popup" id="login_popup">
-                <a href="https://kai.ru/raspisanie#" class="close"></a>
-                <div class="title">
-                  ВОЙТИ В ЛИЧНЫЙ КАБИНЕТ
-                </div>
-                <div class="alert alert-error">
-                  Внимание! Для входа в личный кабинет абитуриента необходимо перейти по <a href="https://abiturientu.kai.ru/" target="_blank">ссылке</a>.
-                </div>
-                <form action="https://kai.ru/raspisanie?p_p_id=58&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;_58_struts_action=%2Flogin%2Flogin" class="form popup_form" id="_58_fm" method="post" name="_58_fm" autocomplete="on">
-                  <fieldset class="input-container" id="yui_patched_v3_11_0_1_1693770250341_949">
-                    <input name="_58_formDate" type="hidden" value="1693770326474"> <input class="field" id="_58_saveLastPath" name="_58_saveLastPath" type="hidden" value="false"> <input class="field" id="_58_redirect" name="_58_redirect" type="hidden" value=""> <input class="field" id="_58_doActionAfterLogin" name="_58_doActionAfterLogin" type="hidden" value="false">
-                    <fieldset class="fieldset" id="yui_patched_v3_11_0_1_1693770250341_948">
-                      <div class="" id="yui_patched_v3_11_0_1_1693770250341_947">
-                        <div class="control-group success" id="yui_patched_v3_11_0_1_1693770250341_946">
-                          <label class="control-label" for="_58_login">Логин</label> <input class="field clearable success-field" id="_58_login" name="_58_login" type="text" value="" aria-required="true">
-                        </div>
-                        <div class="control-group success" id="yui_patched_v3_11_0_1_1693770250341_960">
-                          <label class="control-label" for="_58_password">Пароль</label> <input class="field success-field" id="_58_password" name="_58_password" type="password" value="" autocomplete="off" aria-required="true">
-                        </div><span id="_58_passwordCapsLockSpan" style="display: none;">Caps Lock включен.</span>
-                      </div>
-                    </fieldset>
-                    <div class="button-holder controls">
-                      <button class="btn submit_btn btn-primary" type="submit">Войти</button>
-                    </div>
-                    <div class="login-separator"></div>
-                  </fieldset>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
   <script src="./index_files/main.js(2).%D0%91%D0%B5%D0%B7%20%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F" type="text/javascript"></script> 
   <script src="./index_files/main.js(1).%D0%91%D0%B5%D0%B7%20%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F" type="text/javascript"></script> 
   <script type="text/javascript">
@@ -1502,10 +1406,6 @@
     <div class="portlet-boundary portlet-boundary_73_ portlet-static portlet-static-end portlet-breadcrumb" id="p_p_id_73_">
       <span id="p_73"></span>
       <section class="portlet kai-article" id="portlet_73">
-        <header class="portlet-topper">
-          <h1 class="portlet-title"><span class="" onmouseover="Liferay.Portal.ToolTip.show(this, 'Навигационная\x20цепочка')"><img id="owel_null_null" src="./index_files/spacer.png" alt="spacer" style="background-image: url('https://kai.ru/sprite/html/icons/_sprite.png'); background-position: 50% -240px; background-repeat: no-repeat; height: 16px; width: 16px;"> <span class="taglib-text hide-accessible">Навигационная цепочка</span></span> <span class="portlet-title-text">Навигационная цепочка</span></h1>
-          <menu class="portlet-topper-toolbar" id="portlet-topper-toolbar_73" type="toolbar"></menu>
-        </header>
         <div class="portlet-content" id="yui_patched_v3_11_0_2_1693770250341_73">
           <div class="portlet-content-container" style="" id="yui_patched_v3_11_0_2_1693770250341_72">
             <div class="portlet-body" id="yui_patched_v3_11_0_2_1693770250341_71">
