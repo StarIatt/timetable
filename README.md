@@ -1,2 +1,2 @@
 # timetable
-KNRTU-KAI for group 5403 (2022)
+KNRTU-KAI for group 5185 (2023)
