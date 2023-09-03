@@ -1,0 +1,71 @@
+Liferay.namespace('PortletSharing');
+
+Liferay.provide(
+	Liferay.PortletSharing,
+	'showNetvibesInfo',
+	function(netvibesURL, basePortletURL) {
+		var A = AUI();
+
+		var portletURL = Liferay.PortletURL.createResourceURL();
+
+		if (basePortletURL) {
+			portletURL = Liferay.PortletURL.createURL(basePortletURL);
+		}
+
+		portletURL.setPortletId(133);
+
+		portletURL.setParameter('netvibesURL', netvibesURL);
+
+		var dialog = Liferay.Util.Window.getWindow(
+			{
+				dialog: {
+					destroyOnHide: true
+				},
+				title: '\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c\u0020\u043d\u0430\u0020\u004e\u0065\u0074\u0076\u0069\u0062\u0065\u0073'
+			}
+		);
+
+		dialog.plug(
+			A.Plugin.IO,
+			{
+				uri: portletURL.toString()
+			}
+		);
+	},
+	['aui-io-plugin-deprecated', 'liferay-portlet-url', 'liferay-util-window']
+);
+
+Liferay.provide(
+	Liferay.PortletSharing,
+	'showWidgetInfo',
+	function(widgetURL, basePortletURL) {
+		var A = AUI();
+
+		var portletURL = Liferay.PortletURL.createResourceURL();
+
+		if (basePortletURL) {
+			portletURL = Liferay.PortletURL.createURL(basePortletURL);
+		}
+
+		portletURL.setPortletId(133);
+
+		portletURL.setParameter('widgetURL', widgetURL);
+
+		var dialog = Liferay.Util.Window.getWindow(
+			{
+				dialog: {
+					destroyOnHide: true
+				},
+				title: '\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c\u0020\u043d\u0430\u0020\u0434\u0440\u0443\u0433\u043e\u0439\u0020\u0441\u0430\u0439\u0442'
+			}
+		);
+
+		dialog.plug(
+			A.Plugin.IO,
+			{
+				uri: portletURL.toString()
+			}
+		);
+	},
+	['aui-io-plugin-deprecated', 'liferay-portlet-url', 'liferay-util-window']
+);
